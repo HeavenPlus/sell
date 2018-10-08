@@ -80,4 +80,32 @@ public class ProductInfoServiceImpl implements IProductInfoService {
 		}
 	}
 
+	@Override
+	public ProductInfo onSell(String productId) {
+		Optional<ProductInfo> optional = infoDao.findById(productId);
+		if(!optional.isPresent()){
+			throw new SellException(ExceptionEunm.PRODUCT_NOT_EXIST);
+		}
+		ProductInfo productInfo = optional.get();
+		if(productInfo.getProductStatus()!=0){
+			throw new SellException(ExceptionEunm.PAY_STATUS_ERROR);
+		}
+		productInfo.setProductStatus(ProductStatusEunm.UP.getCode());
+		return infoDao.save(productInfo);
+	}
+
+	@Override
+	public ProductInfo offSell(String productId) {
+		Optional<ProductInfo> optional = infoDao.findById(productId);
+		if(!optional.isPresent()){
+			throw new SellException(ExceptionEunm.PRODUCT_NOT_EXIST);
+		}
+		ProductInfo productInfo = optional.get();
+		if(productInfo.getProductStatus()!=1){
+			throw new SellException(ExceptionEunm.PAY_STATUS_ERROR);
+		}
+		productInfo.setProductStatus(ProductStatusEunm.DONW.getCode());
+		return infoDao.save(productInfo);
+	}
+
 }

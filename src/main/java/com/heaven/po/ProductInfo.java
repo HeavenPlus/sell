@@ -1,6 +1,7 @@
 package com.heaven.po;
 
 import java.math.BigDecimal;
+import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -30,4 +31,10 @@ public class ProductInfo {
 	private Integer productStatus;
 	//商品类目编号
 	private Integer categoryType;
+	// 创建时间
+//	@JsonSerialize(using = DateToLong.class)
+	private Date createTime;
+	// 更新时间
+//	@JsonSerialize(using = DateToLong.class)
+	private Date updateTime;
 }

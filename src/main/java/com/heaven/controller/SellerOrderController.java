@@ -30,7 +30,7 @@ public class SellerOrderController {
 		map.put("orderDTO", orderDTO);
 		map.put("currentPage", page);
 		map.put("size", size);
-		return new ModelAndView("/list",map);
+		return new ModelAndView("order/list",map);
 	}
 	@GetMapping("/cancel")
 	public ModelAndView cancel(@RequestParam("orderId") String orderId,Map<String,Object> map){
@@ -42,10 +42,10 @@ public class SellerOrderController {
 		
 		}catch(SellException e){
 			map.put("msg", e.getMessage());
-			return new ModelAndView("/error",map);	
+			return new ModelAndView("order/error",map);	
 		}
 		map.put("msg", ExceptionEunm.CANCEL_SUCCESS.getMsg());
-		return new ModelAndView("/success",map);
+		return new ModelAndView("order/success",map);
 	}
 	
 	@GetMapping("/detail")
@@ -56,10 +56,10 @@ public class SellerOrderController {
 		}catch(SellException e){
 			map.put("msg", e.getMessage());
 			map.put("url", "/sell/seller/order/list");
-			return new ModelAndView("/error",map);
+			return new ModelAndView("order/error",map);
 		}
 		map.put("orderDTO", orderDTO);
-		return new ModelAndView("/detail",map);
+		return new ModelAndView("order/detail",map);
 	}
 	@GetMapping("/finish")
 	public ModelAndView finish(@RequestParam("orderId") String orderId,Map<String,Object> map){
@@ -69,9 +69,9 @@ public class SellerOrderController {
 			masterService.finish(orderDTO);
 		}catch(SellException e){
 			map.put("msg", e.getMessage());
-			return new ModelAndView("/error",map);
+			return new ModelAndView("order/error",map);
 		}
 		map.put("msg", ExceptionEunm.FINISH_SUCCESS.getMsg());
-		return new ModelAndView("/success",map);
+		return new ModelAndView("order/success",map);
 	}
 }

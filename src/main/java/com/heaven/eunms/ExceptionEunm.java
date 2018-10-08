@@ -31,7 +31,13 @@ public enum ExceptionEunm {
 	
 	CANCEL_SUCCESS(22,"订单取消成功!"),
 
-	FINISH_SUCCESS(23,"订单完结成功!");
+	FINISH_SUCCESS(23,"订单完结成功!"),
+	
+	PRODUCT_STATUS_ERROR(24,"商品状态不正确"),
+	
+	ON_SELL_SUCCESS(25,"上架成功"),
+	
+	OFF_SELL_SUCCESS(26,"下架成功");
 	
 	private Integer code;
 	private String msg;

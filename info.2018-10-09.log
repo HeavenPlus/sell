@@ -3557,3 +3557,10 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2018-10-09 15:20:15,419 - Tomcat started on port(s): 8080 (http) with context path '/sell'
 2018-10-09 15:20:15,421 - Started SellApplication in 3.083 seconds (JVM running for 22756.46)
 2018-10-09 15:20:15,424 - Condition evaluation unchanged
+2018-10-09 15:23:44,576 - Application shutdown requested.
+2018-10-09 15:23:44,576 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@258e53e4: startup date [Tue Oct 09 15:20:12 CST 2018]; root of context hierarchy
+2018-10-09 15:23:44,596 - Unregistering JMX-exposed beans on shutdown
+2018-10-09 15:23:44,597 - Unregistering JMX-exposed beans
+2018-10-09 15:23:44,598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-09 15:23:44,599 - HikariPool-52 - Shutdown initiated...
+2018-10-09 15:23:44,608 - HikariPool-52 - Shutdown completed.

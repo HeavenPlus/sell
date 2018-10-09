@@ -39,7 +39,11 @@ public enum ExceptionEunm {
 	
 	OFF_SELL_SUCCESS(26,"下架成功"),
 	
-	PRODUCT_UPDATE_SUCCESS(27,"商品更新成功");
+	PRODUCT_UPDATE_SUCCESS(27,"商品更新成功"),
+	
+	CATEGORY_NOT_EXIST(28,"商品类目不存在"),
+	
+	CATEGORY_UPDATE_SUCCESS(29,"商品类目更新成功");
 	
 	private Integer code;
 	private String msg;

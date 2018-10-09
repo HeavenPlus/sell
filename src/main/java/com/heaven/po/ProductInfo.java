@@ -8,6 +8,8 @@ import javax.persistence.Id;
 
 import org.hibernate.annotations.DynamicUpdate;
 
+import com.heaven.eunms.ProductStatusEunm;
+
 import lombok.Data;
 
 @Entity
@@ -28,7 +30,7 @@ public class ProductInfo {
 	//商品图片
 	private String productIcon;
 	//商品状态
-	private Integer productStatus;
+	private Integer productStatus = ProductStatusEunm.UP.getCode();
 	//商品类目编号
 	private Integer categoryType;
 	// 创建时间

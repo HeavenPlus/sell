@@ -37,7 +37,9 @@ public enum ExceptionEunm {
 	
 	ON_SELL_SUCCESS(25,"上架成功"),
 	
-	OFF_SELL_SUCCESS(26,"下架成功");
+	OFF_SELL_SUCCESS(26,"下架成功"),
+	
+	PRODUCT_UPDATE_SUCCESS(27,"商品更新成功");
 	
 	private Integer code;
 	private String msg;

@@ -43,8 +43,13 @@ public enum ExceptionEunm {
 	
 	CATEGORY_NOT_EXIST(28,"商品类目不存在"),
 	
-	CATEGORY_UPDATE_SUCCESS(29,"商品类目更新成功");
+	CATEGORY_UPDATE_SUCCESS(29,"商品类目更新成功"),
 	
+	USER_NOT_EXIST(30,"用户不存在"),
+	
+	PASSWORD_ERROR(30,"密码错误"),
+	
+	NOT_LOGIN(31,"您还未登录，请登陆！");
 	private Integer code;
 	private String msg;
 

@@ -713,3 +713,939 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2018-10-11 09:14:59,068 - Tomcat started on port(s): 8080 (http) with context path '/sell'
 2018-10-11 09:14:59,070 - Started SellApplication in 3.709 seconds (JVM running for 475.729)
 2018-10-11 09:14:59,074 - Condition evaluation unchanged
+2018-10-11 09:21:24,820 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d44dd1e: startup date [Thu Oct 11 09:14:55 CST 2018]; root of context hierarchy
+2018-10-11 09:21:24,823 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:21:24,823 - Unregistering JMX-exposed beans
+2018-10-11 09:21:24,828 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:24,831 - HikariPool-7 - Shutdown initiated...
+2018-10-11 09:21:24,844 - HikariPool-7 - Shutdown completed.
+2018-10-11 09:21:25,791 - Starting SellApplication on PC-20180712YPKF with PID 4024 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:21:25,792 - No active profile set, falling back to default profiles: default
+2018-10-11 09:21:25,797 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@626ec0ca: startup date [Thu Oct 11 09:21:25 CST 2018]; root of context hierarchy
+2018-10-11 09:21:27,117 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:27,218 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:27,244 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:21:27,244 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:21:27,244 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:21:27,245 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:21:27,245 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:21:27,436 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a00ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:21:27,732 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:21:27,734 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:27,735 - Starting service [Tomcat]
+2018-10-11 09:21:27,735 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:21:27,771 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:21:27,772 - Root WebApplicationContext: initialization completed in 1976 ms
+2018-10-11 09:21:27,809 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:21:27,810 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:21:27,810 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:21:27,810 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:21:27,810 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:21:27,914 - HikariPool-8 - Starting...
+2018-10-11 09:21:27,926 - HikariPool-8 - Start completed.
+2018-10-11 09:21:27,964 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:27,965 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:21:28,017 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:21:28,154 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:28,838 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:29,160 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@626ec0ca: startup date [Thu Oct 11 09:21:25 CST 2018]; root of context hierarchy
+2018-10-11 09:21:29,184 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:21:29,198 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:21:29,198 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:21:29,199 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:21:29,199 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:21:29,199 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:21:29,200 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:21:29,201 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,202 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,202 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,203 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:29,204 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:29,205 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,206 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,206 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,207 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,209 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,210 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,210 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,210 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,211 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:29,212 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:21:29,212 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:21:29,216 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:21:29,216 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:29,259 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:29,259 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:29,284 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:21:29,552 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:21:29,796 - LiveReload server is running on port 35729
+2018-10-11 09:21:29,866 - Registering beans for JMX exposure on startup
+2018-10-11 09:21:29,868 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:21:29,880 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:21:29,892 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:29,895 - Using a shared selector for servlet write/read
+2018-10-11 09:21:29,919 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:21:29,922 - Started SellApplication in 4.211 seconds (JVM running for 866.575)
+2018-10-11 09:21:29,929 - Condition evaluation unchanged
+2018-10-11 09:21:33,922 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@626ec0ca: startup date [Thu Oct 11 09:21:25 CST 2018]; root of context hierarchy
+2018-10-11 09:21:33,927 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:21:33,927 - Unregistering JMX-exposed beans
+2018-10-11 09:21:34,149 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:34,154 - HikariPool-8 - Shutdown initiated...
+2018-10-11 09:21:34,174 - HikariPool-8 - Shutdown completed.
+2018-10-11 09:21:37,392 - Starting SellApplication on PC-20180712YPKF with PID 4024 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:21:37,393 - No active profile set, falling back to default profiles: default
+2018-10-11 09:21:37,399 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d06a92e: startup date [Thu Oct 11 09:21:37 CST 2018]; root of context hierarchy
+2018-10-11 09:21:38,608 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:38,695 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:38,721 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:21:38,721 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:21:38,722 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:21:38,722 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:21:38,722 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:21:38,886 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a00ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:21:39,215 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:21:39,217 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:39,217 - Starting service [Tomcat]
+2018-10-11 09:21:39,217 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:21:39,250 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:21:39,252 - Root WebApplicationContext: initialization completed in 1853 ms
+2018-10-11 09:21:39,286 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:21:39,287 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:21:39,287 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:21:39,287 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:21:39,287 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:21:39,416 - HikariPool-9 - Starting...
+2018-10-11 09:21:39,469 - HikariPool-9 - Start completed.
+2018-10-11 09:21:39,516 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:39,517 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:21:39,634 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:21:39,816 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:40,714 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:41,183 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d06a92e: startup date [Thu Oct 11 09:21:37 CST 2018]; root of context hierarchy
+2018-10-11 09:21:41,219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:21:41,238 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:21:41,238 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:21:41,239 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:21:41,239 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:21:41,240 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:21:41,241 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:21:41,243 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,244 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,245 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,247 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:41,248 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:41,251 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,252 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,252 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,253 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,256 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,257 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,258 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,259 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,260 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:41,262 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:21:41,262 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:21:41,268 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:21:41,269 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:41,336 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:41,336 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:41,363 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:21:41,673 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:21:42,029 - LiveReload server is running on port 35729
+2018-10-11 09:21:42,121 - Registering beans for JMX exposure on startup
+2018-10-11 09:21:42,123 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:21:42,138 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:21:42,154 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:42,159 - Using a shared selector for servlet write/read
+2018-10-11 09:21:42,186 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:21:42,188 - Started SellApplication in 4.91 seconds (JVM running for 878.841)
+2018-10-11 09:21:42,195 - Condition evaluation unchanged
+2018-10-11 09:21:49,903 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d06a92e: startup date [Thu Oct 11 09:21:37 CST 2018]; root of context hierarchy
+2018-10-11 09:21:49,907 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:21:49,907 - Unregistering JMX-exposed beans
+2018-10-11 09:21:49,911 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:49,913 - HikariPool-9 - Shutdown initiated...
+2018-10-11 09:21:49,923 - HikariPool-9 - Shutdown completed.
+2018-10-11 09:21:50,833 - Starting SellApplication on PC-20180712YPKF with PID 4024 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:21:50,833 - No active profile set, falling back to default profiles: default
+2018-10-11 09:21:50,838 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3e0a7a: startup date [Thu Oct 11 09:21:50 CST 2018]; root of context hierarchy
+2018-10-11 09:21:51,669 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:52,000 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:21:52,037 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:21:52,038 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:21:52,039 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:21:52,040 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:21:52,040 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:21:52,324 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a00ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:21:52,851 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:21:52,854 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:52,854 - Starting service [Tomcat]
+2018-10-11 09:21:52,857 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:21:52,908 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:21:52,910 - Root WebApplicationContext: initialization completed in 2072 ms
+2018-10-11 09:21:52,950 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:21:52,951 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:21:52,951 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:21:52,951 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:21:52,951 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:21:53,070 - HikariPool-10 - Starting...
+2018-10-11 09:21:53,086 - HikariPool-10 - Start completed.
+2018-10-11 09:21:53,134 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:53,134 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:21:53,201 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:21:53,333 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:54,754 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:56,035 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3e0a7a: startup date [Thu Oct 11 09:21:50 CST 2018]; root of context hierarchy
+2018-10-11 09:21:56,075 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:21:56,101 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:21:56,102 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:21:56,102 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:21:56,103 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:21:56,104 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:21:56,105 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:21:56,110 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,111 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,112 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,116 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:56,117 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:56,121 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,122 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,123 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,123 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,127 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,131 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,132 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,133 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,133 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:21:56,141 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:21:56,142 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:21:56,147 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:21:56,148 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:21:56,244 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:56,245 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:21:56,284 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:21:56,660 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:21:56,990 - LiveReload server is running on port 35729
+2018-10-11 09:21:57,085 - Registering beans for JMX exposure on startup
+2018-10-11 09:21:57,086 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:21:57,099 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:21:57,112 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:21:57,115 - Using a shared selector for servlet write/read
+2018-10-11 09:21:57,124 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:21:57,126 - Started SellApplication in 6.368 seconds (JVM running for 893.778)
+2018-10-11 09:21:57,135 - Condition evaluation unchanged
+2018-10-11 09:21:59,566 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3e0a7a: startup date [Thu Oct 11 09:21:50 CST 2018]; root of context hierarchy
+2018-10-11 09:21:59,570 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:21:59,571 - Unregistering JMX-exposed beans
+2018-10-11 09:21:59,577 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:21:59,580 - HikariPool-10 - Shutdown initiated...
+2018-10-11 09:21:59,597 - HikariPool-10 - Shutdown completed.
+2018-10-11 09:22:00,457 - Starting SellApplication on PC-20180712YPKF with PID 4024 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:22:00,458 - No active profile set, falling back to default profiles: default
+2018-10-11 09:22:00,463 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6234bb1c: startup date [Thu Oct 11 09:22:00 CST 2018]; root of context hierarchy
+2018-10-11 09:22:01,279 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:22:01,361 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:22:01,387 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:22:01,388 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:22:01,388 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:22:01,389 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:22:01,389 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:22:01,556 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a00ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:22:01,926 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:22:01,928 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:22:01,929 - Starting service [Tomcat]
+2018-10-11 09:22:01,929 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:22:01,972 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:22:01,973 - Root WebApplicationContext: initialization completed in 1511 ms
+2018-10-11 09:22:02,010 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:22:02,010 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:22:02,010 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:22:02,010 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:22:02,010 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:22:02,123 - HikariPool-11 - Starting...
+2018-10-11 09:22:02,134 - HikariPool-11 - Start completed.
+2018-10-11 09:22:02,169 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:22:02,170 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:22:02,223 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:22:02,350 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:22:03,133 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:22:03,421 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6234bb1c: startup date [Thu Oct 11 09:22:00 CST 2018]; root of context hierarchy
+2018-10-11 09:22:03,444 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:22:03,458 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:22:03,458 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:22:03,458 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:22:03,459 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:22:03,459 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:22:03,460 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:22:03,462 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,463 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,463 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,465 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:22:03,465 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:22:03,468 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,469 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,469 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,469 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,472 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,472 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,473 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,473 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,474 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:22:03,475 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:22:03,476 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:22:03,480 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:22:03,481 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:22:03,524 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:22:03,524 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:22:03,548 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:22:03,850 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:22:04,083 - LiveReload server is running on port 35729
+2018-10-11 09:22:04,149 - Registering beans for JMX exposure on startup
+2018-10-11 09:22:04,150 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:22:04,159 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:22:04,170 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:22:04,172 - Using a shared selector for servlet write/read
+2018-10-11 09:22:04,178 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:22:04,180 - Started SellApplication in 3.798 seconds (JVM running for 900.832)
+2018-10-11 09:22:04,184 - Condition evaluation unchanged
+2018-10-11 09:22:10,853 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6234bb1c: startup date [Thu Oct 11 09:22:00 CST 2018]; root of context hierarchy
+2018-10-11 09:22:10,857 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:22:10,858 - Unregistering JMX-exposed beans
+2018-10-11 09:22:10,862 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:22:11,014 - HikariPool-11 - Shutdown initiated...
+2018-10-11 09:22:11,134 - HikariPool-11 - Shutdown completed.
+2018-10-11 09:22:30,830 - Starting SellApplication on PC-20180712YPKF with PID 4024 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:22:30,831 - No active profile set, falling back to default profiles: default
+2018-10-11 09:22:30,836 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7afc878b: startup date [Thu Oct 11 09:22:30 CST 2018]; root of context hierarchy
+2018-10-11 09:22:31,682 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:22:31,767 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:22:31,802 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:22:31,803 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:22:31,803 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:22:31,804 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:22:31,804 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:22:32,032 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a00ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:28:36,163 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:28:36,166 - No active profile set, falling back to default profiles: default
+2018-10-11 09:28:36,897 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ebbc748: startup date [Thu Oct 11 09:28:36 CST 2018]; root of context hierarchy
+2018-10-11 09:28:40,625 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:28:41,414 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:28:41,498 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:28:41,504 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:28:41,506 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:28:41,509 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:28:41,511 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:28:43,310 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:28:46,164 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:28:46,220 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:28:46,270 - Starting service [Tomcat]
+2018-10-11 09:28:46,270 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:28:46,309 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\JDK8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/JDK8/bin/../jre/bin/server;D:/JDK8/bin/../jre/bin;D:/JDK8/bin/../jre/lib/amd64;d:\Oracle\app\oracle\product\10.2.0\server\bin;D:\JDK8\bin;D:\apache-maven-3.3.9\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\SVN\bin;D:\Nodejs\;C:\Users\Administrator\AppData\Roaming\npm;D:\software\eclipse-jee-neon-3-win32-x86_64\eclipse;;.]
+2018-10-11 09:28:46,684 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:28:46,685 - Root WebApplicationContext: initialization completed in 9789 ms
+2018-10-11 09:28:46,992 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:28:47,005 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:28:47,006 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:28:47,006 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:28:47,006 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:28:47,686 - HikariPool-1 - Starting...
+2018-10-11 09:28:57,359 - HikariPool-1 - Start completed.
+2018-10-11 09:28:57,633 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:28:57,698 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:28:58,117 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-11 09:28:58,122 - HHH000206: hibernate.properties not found
+2018-10-11 09:28:58,307 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-11 09:28:58,905 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:29:01,130 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:29:06,582 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:29:07,878 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ebbc748: startup date [Thu Oct 11 09:28:36 CST 2018]; root of context hierarchy
+2018-10-11 09:29:08,077 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:29:08,235 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:29:08,255 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:29:08,256 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:29:08,264 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:29:08,266 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:29:08,269 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:29:08,276 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,278 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,279 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,286 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:29:08,288 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:29:08,296 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,298 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,299 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,302 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,317 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,318 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,320 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,321 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,322 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:29:08,336 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:29:08,337 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:29:08,345 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:29:08,347 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:29:08,509 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:29:08,509 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:29:08,579 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:29:10,284 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:29:11,081 - LiveReload server is running on port 35729
+2018-10-11 09:29:11,211 - Registering beans for JMX exposure on startup
+2018-10-11 09:29:11,217 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:29:11,238 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:29:11,282 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:29:11,314 - Using a shared selector for servlet write/read
+2018-10-11 09:29:11,365 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:29:11,388 - Started SellApplication in 37.063 seconds (JVM running for 38.889)
+2018-10-11 09:29:21,768 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-11 09:29:21,768 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-11 09:29:21,902 - FrameworkServlet 'dispatcherServlet': initialization completed in 133 ms
+2018-10-11 09:31:05,508 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ebbc748: startup date [Thu Oct 11 09:28:36 CST 2018]; root of context hierarchy
+2018-10-11 09:31:05,515 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:31:05,540 - Unregistering JMX-exposed beans
+2018-10-11 09:31:05,664 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:31:05,855 - HikariPool-1 - Shutdown initiated...
+2018-10-11 09:31:05,953 - HikariPool-1 - Shutdown completed.
+2018-10-11 09:31:09,293 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:31:09,296 - No active profile set, falling back to default profiles: default
+2018-10-11 09:31:09,309 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c003ac0: startup date [Thu Oct 11 09:31:09 CST 2018]; root of context hierarchy
+2018-10-11 09:31:11,783 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:31:12,031 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:31:12,068 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:31:12,070 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:31:12,071 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:31:12,072 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:31:12,074 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:31:12,401 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:31:12,978 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:31:12,982 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:31:12,985 - Starting service [Tomcat]
+2018-10-11 09:31:12,988 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:31:13,050 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:31:13,051 - Root WebApplicationContext: initialization completed in 3743 ms
+2018-10-11 09:31:13,105 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:31:13,106 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:31:13,107 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:31:13,107 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:31:13,107 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:31:13,290 - HikariPool-2 - Starting...
+2018-10-11 09:31:13,316 - HikariPool-2 - Start completed.
+2018-10-11 09:31:13,362 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:31:13,363 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:31:13,457 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:31:13,819 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:31:15,220 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:31:17,626 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c003ac0: startup date [Thu Oct 11 09:31:09 CST 2018]; root of context hierarchy
+2018-10-11 09:31:17,655 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:31:17,691 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:31:17,693 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:31:17,693 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:31:17,694 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:31:17,695 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:31:17,697 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:31:17,708 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,711 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,712 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,733 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:31:17,734 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:31:17,740 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,740 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,742 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,743 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,769 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,776 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,779 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,780 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,780 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:31:17,786 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:31:17,787 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:31:17,792 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:31:17,797 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:31:17,874 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:31:17,879 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:31:17,911 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:31:18,400 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:31:20,724 - LiveReload server is running on port 35729
+2018-10-11 09:31:20,815 - Registering beans for JMX exposure on startup
+2018-10-11 09:31:20,817 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:31:20,832 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:31:20,875 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:31:20,880 - Using a shared selector for servlet write/read
+2018-10-11 09:31:20,904 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:31:20,907 - Started SellApplication in 11.921 seconds (JVM running for 168.406)
+2018-10-11 09:31:20,915 - Condition evaluation unchanged
+2018-10-11 09:33:23,986 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c003ac0: startup date [Thu Oct 11 09:31:09 CST 2018]; root of context hierarchy
+2018-10-11 09:33:23,998 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:33:23,999 - Unregistering JMX-exposed beans
+2018-10-11 09:33:24,019 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:33:24,033 - HikariPool-2 - Shutdown initiated...
+2018-10-11 09:33:24,050 - HikariPool-2 - Shutdown completed.
+2018-10-11 09:33:25,518 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:33:25,521 - No active profile set, falling back to default profiles: default
+2018-10-11 09:33:25,529 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1cfaa51d: startup date [Thu Oct 11 09:33:25 CST 2018]; root of context hierarchy
+2018-10-11 09:33:27,295 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:33:27,499 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:33:27,561 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:33:27,562 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:33:27,563 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:33:27,564 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:33:27,567 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:33:27,917 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:33:28,503 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:33:28,508 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:33:28,509 - Starting service [Tomcat]
+2018-10-11 09:33:28,509 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:33:28,584 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:33:28,586 - Root WebApplicationContext: initialization completed in 3057 ms
+2018-10-11 09:33:28,633 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:33:28,634 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:33:28,634 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:33:28,635 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:33:28,635 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:33:28,819 - HikariPool-3 - Starting...
+2018-10-11 09:33:28,848 - HikariPool-3 - Start completed.
+2018-10-11 09:33:28,896 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:33:28,896 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:33:28,973 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:33:29,263 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:33:30,653 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:33:31,180 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1cfaa51d: startup date [Thu Oct 11 09:33:25 CST 2018]; root of context hierarchy
+2018-10-11 09:33:31,227 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:33:31,251 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:33:31,252 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:33:31,252 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:33:31,252 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:33:31,256 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:33:31,259 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:33:31,265 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,265 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,266 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,269 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:33:31,271 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:33:31,275 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,275 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,276 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,277 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,292 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,293 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,294 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,294 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,295 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:33:31,297 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:33:31,298 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:33:31,303 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:33:31,307 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:33:31,351 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:33:31,352 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:33:31,378 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:33:31,807 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:33:32,157 - LiveReload server is running on port 35729
+2018-10-11 09:33:32,206 - Registering beans for JMX exposure on startup
+2018-10-11 09:33:32,208 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:33:32,215 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:33:32,226 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:33:32,229 - Using a shared selector for servlet write/read
+2018-10-11 09:33:32,281 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:33:32,283 - Started SellApplication in 6.942 seconds (JVM running for 299.78)
+2018-10-11 09:33:32,288 - Condition evaluation unchanged
+2018-10-11 09:36:08,194 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1cfaa51d: startup date [Thu Oct 11 09:33:25 CST 2018]; root of context hierarchy
+2018-10-11 09:36:08,297 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:36:08,297 - Unregistering JMX-exposed beans
+2018-10-11 09:36:08,541 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:36:08,876 - HikariPool-3 - Shutdown initiated...
+2018-10-11 09:36:08,947 - HikariPool-3 - Shutdown completed.
+2018-10-11 09:36:11,684 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:36:11,686 - No active profile set, falling back to default profiles: default
+2018-10-11 09:36:11,695 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b95ee8c: startup date [Thu Oct 11 09:36:11 CST 2018]; root of context hierarchy
+2018-10-11 09:36:13,165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:36:13,303 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:36:13,341 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:36:13,342 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:36:13,343 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:36:13,345 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:36:13,346 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:36:13,641 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:36:14,049 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:36:14,052 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:36:14,053 - Starting service [Tomcat]
+2018-10-11 09:36:14,053 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:36:14,113 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:36:14,115 - Root WebApplicationContext: initialization completed in 2420 ms
+2018-10-11 09:36:14,155 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:36:14,157 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:36:14,157 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:36:14,157 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:36:14,158 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:36:14,305 - HikariPool-4 - Starting...
+2018-10-11 09:36:14,326 - HikariPool-4 - Start completed.
+2018-10-11 09:36:14,373 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:36:14,374 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:36:14,457 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:36:14,678 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:36:15,740 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:36:16,076 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b95ee8c: startup date [Thu Oct 11 09:36:11 CST 2018]; root of context hierarchy
+2018-10-11 09:36:16,100 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:36:16,116 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:36:16,116 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:36:16,117 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:36:16,117 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:36:16,118 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:36:16,118 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:36:16,121 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,122 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,122 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,124 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:36:16,125 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:36:16,128 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,128 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,129 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,130 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,140 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,141 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,142 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,143 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,143 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:36:16,145 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:36:16,146 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:36:16,150 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:36:16,150 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:36:16,203 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:36:16,205 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:36:16,231 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:36:16,571 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:36:16,895 - LiveReload server is running on port 35729
+2018-10-11 09:36:16,942 - Registering beans for JMX exposure on startup
+2018-10-11 09:36:16,944 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:36:16,952 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:36:16,965 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:36:16,967 - Using a shared selector for servlet write/read
+2018-10-11 09:36:17,011 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:36:17,013 - Started SellApplication in 5.505 seconds (JVM running for 464.508)
+2018-10-11 09:36:17,018 - Condition evaluation unchanged
+2018-10-11 09:36:23,815 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-11 09:36:23,815 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-11 09:36:23,832 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-10-11 09:36:24,032 - Resolved exception caused by handler execution: com.heaven.exception.SellException: 商品不存在
+2018-10-11 09:36:29,272 - Resolved exception caused by handler execution: com.heaven.exception.SellException: 商品不存在
+2018-10-11 09:39:02,701 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b95ee8c: startup date [Thu Oct 11 09:36:11 CST 2018]; root of context hierarchy
+2018-10-11 09:39:02,708 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:39:02,708 - Unregistering JMX-exposed beans
+2018-10-11 09:39:02,714 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:39:02,747 - HikariPool-4 - Shutdown initiated...
+2018-10-11 09:39:02,908 - HikariPool-4 - Shutdown completed.
+2018-10-11 09:39:05,447 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:39:05,448 - No active profile set, falling back to default profiles: default
+2018-10-11 09:39:05,456 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@773412dc: startup date [Thu Oct 11 09:39:05 CST 2018]; root of context hierarchy
+2018-10-11 09:39:07,332 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:39:07,492 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:39:07,530 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:39:07,532 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:39:07,532 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:39:07,533 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:39:07,534 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:39:07,812 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:39:08,256 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:39:08,258 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:39:08,259 - Starting service [Tomcat]
+2018-10-11 09:39:08,260 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:39:08,313 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:39:08,315 - Root WebApplicationContext: initialization completed in 2859 ms
+2018-10-11 09:39:08,345 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:39:08,346 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:39:08,347 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:39:08,347 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:39:08,347 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:39:08,476 - HikariPool-5 - Starting...
+2018-10-11 09:39:08,497 - HikariPool-5 - Start completed.
+2018-10-11 09:39:08,544 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:39:08,545 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:39:08,651 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:39:08,842 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:39:09,768 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:39:10,079 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@773412dc: startup date [Thu Oct 11 09:39:05 CST 2018]; root of context hierarchy
+2018-10-11 09:39:10,097 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:39:10,113 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:39:10,114 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:39:10,115 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:39:10,116 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:39:10,117 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:39:10,118 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:39:10,120 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,121 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,122 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,125 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:39:10,126 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:39:10,129 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,130 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,131 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,132 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,137 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,137 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,138 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,139 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,140 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:39:10,142 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:39:10,142 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:39:10,147 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:39:10,147 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:39:10,199 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:39:10,199 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:39:10,222 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:39:10,684 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:39:11,107 - LiveReload server is running on port 35729
+2018-10-11 09:39:11,158 - Registering beans for JMX exposure on startup
+2018-10-11 09:39:11,160 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:39:11,168 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:39:11,179 - Starting ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:39:11,182 - Using a shared selector for servlet write/read
+2018-10-11 09:39:11,217 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:39:11,219 - Started SellApplication in 5.901 seconds (JVM running for 638.71)
+2018-10-11 09:39:11,223 - Condition evaluation unchanged
+2018-10-11 09:39:21,955 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-11 09:39:21,956 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-11 09:39:21,973 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-10-11 09:39:22,179 - Resolved exception caused by handler execution: com.heaven.exception.SellException: 商品不存在
+2018-10-11 09:39:53,966 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@773412dc: startup date [Thu Oct 11 09:39:05 CST 2018]; root of context hierarchy
+2018-10-11 09:39:53,969 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:39:53,970 - Unregistering JMX-exposed beans
+2018-10-11 09:39:53,975 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:39:53,983 - HikariPool-5 - Shutdown initiated...
+2018-10-11 09:39:54,057 - HikariPool-5 - Shutdown completed.
+2018-10-11 09:39:55,936 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:39:55,937 - No active profile set, falling back to default profiles: default
+2018-10-11 09:39:55,946 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ec5e406: startup date [Thu Oct 11 09:39:55 CST 2018]; root of context hierarchy
+2018-10-11 09:39:58,149 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:39:58,301 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:39:58,368 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:39:58,368 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:39:58,369 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:39:58,370 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:39:58,386 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:39:58,784 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:39:59,273 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:39:59,275 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:39:59,276 - Starting service [Tomcat]
+2018-10-11 09:39:59,276 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:39:59,327 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:39:59,329 - Root WebApplicationContext: initialization completed in 3383 ms
+2018-10-11 09:39:59,367 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:39:59,368 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:39:59,368 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:39:59,368 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:39:59,369 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:39:59,496 - HikariPool-6 - Starting...
+2018-10-11 09:39:59,558 - HikariPool-6 - Start completed.
+2018-10-11 09:39:59,601 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:39:59,601 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:39:59,675 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:39:59,849 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:00,730 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sellerExceptionHandlr' defined in file [D:\SpringBoot\sell\target\classes\com\heaven\exception\SellerExceptionHandlr.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.heaven.exception.SellerExceptionHandlr]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type SellerExceptionHandlr must be defined in its own file
+
+2018-10-11 09:40:00,736 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:00,738 - HikariPool-6 - Shutdown initiated...
+2018-10-11 09:40:00,759 - HikariPool-6 - Shutdown completed.
+2018-10-11 09:40:00,761 - Stopping service [Tomcat]
+2018-10-11 09:40:00,783 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-11 09:40:06,904 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:40:06,904 - No active profile set, falling back to default profiles: default
+2018-10-11 09:40:06,920 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dd2b436: startup date [Thu Oct 11 09:40:06 CST 2018]; root of context hierarchy
+2018-10-11 09:40:08,433 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:40:08,579 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:40:08,619 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:40:08,620 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:40:08,621 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:40:08,622 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:40:08,649 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:40:08,929 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:40:09,385 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:40:09,388 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-11 09:40:09,389 - Starting service [Tomcat]
+2018-10-11 09:40:09,389 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:40:09,453 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:40:09,454 - Root WebApplicationContext: initialization completed in 2540 ms
+2018-10-11 09:40:09,491 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:40:09,492 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:40:09,493 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:40:09,494 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:40:09,495 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:40:09,649 - HikariPool-7 - Starting...
+2018-10-11 09:40:09,679 - HikariPool-7 - Start completed.
+2018-10-11 09:40:09,740 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:09,740 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:40:09,894 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:40:10,197 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:11,071 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sellerExceptionHandlr' defined in file [D:\SpringBoot\sell\target\classes\com\heaven\exception\SellerExceptionHandlr.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.heaven.exception.SellerExceptionHandlr]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type SellerExceptionHandlr must be defined in its own file
+
+2018-10-11 09:40:11,077 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:11,078 - HikariPool-7 - Shutdown initiated...
+2018-10-11 09:40:11,095 - HikariPool-7 - Shutdown completed.
+2018-10-11 09:40:11,097 - Stopping service [Tomcat]
+2018-10-11 09:40:11,116 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-11 09:40:23,233 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:40:23,234 - No active profile set, falling back to default profiles: default
+2018-10-11 09:40:23,240 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146ef11b: startup date [Thu Oct 11 09:40:23 CST 2018]; root of context hierarchy
+2018-10-11 09:40:24,314 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:40:24,435 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:40:24,482 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:40:24,483 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:40:24,484 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:40:24,485 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:40:24,486 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:40:24,731 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:40:25,083 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:40:25,085 - Starting service [Tomcat]
+2018-10-11 09:40:25,085 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:40:25,140 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:40:25,152 - Root WebApplicationContext: initialization completed in 1912 ms
+2018-10-11 09:40:25,189 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:40:25,190 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:40:25,190 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:40:25,191 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:40:25,191 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:40:25,306 - HikariPool-8 - Starting...
+2018-10-11 09:40:25,323 - HikariPool-8 - Start completed.
+2018-10-11 09:40:25,364 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:25,364 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:40:25,439 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:40:25,698 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:26,673 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:40:26,923 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146ef11b: startup date [Thu Oct 11 09:40:23 CST 2018]; root of context hierarchy
+2018-10-11 09:40:26,938 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:40:26,959 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:40:26,960 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:40:26,960 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:40:26,960 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:40:26,966 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:40:26,970 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:40:26,979 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:26,985 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:26,995 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:26,998 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:40:26,999 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:40:27,002 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,003 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,003 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,004 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,008 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,009 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,009 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,010 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,010 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:40:27,012 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:40:27,012 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:40:27,015 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:40:27,015 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:40:27,054 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:40:27,055 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:40:27,074 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:40:27,360 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:40:27,608 - LiveReload server is running on port 35729
+2018-10-11 09:40:27,658 - Registering beans for JMX exposure on startup
+2018-10-11 09:40:27,666 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:40:27,673 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:40:27,704 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:40:27,705 - Started SellApplication in 4.583 seconds (JVM running for 715.195)
+2018-10-11 09:40:27,710 - Condition evaluation unchanged
+2018-10-11 09:40:41,766 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146ef11b: startup date [Thu Oct 11 09:40:23 CST 2018]; root of context hierarchy
+2018-10-11 09:40:41,770 - Unregistering JMX-exposed beans on shutdown
+2018-10-11 09:40:41,771 - Unregistering JMX-exposed beans
+2018-10-11 09:40:41,910 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:40:42,010 - HikariPool-8 - Shutdown initiated...
+2018-10-11 09:40:42,645 - HikariPool-8 - Shutdown completed.
+2018-10-11 09:42:27,878 - Starting SellApplication on PC-20180712YPKF with PID 4712 (D:\SpringBoot\sell\target\classes started by Administrator in D:\SpringBoot\sell)
+2018-10-11 09:42:27,879 - No active profile set, falling back to default profiles: default
+2018-10-11 09:42:27,886 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56044b42: startup date [Thu Oct 11 09:42:27 CST 2018]; root of context hierarchy
+2018-10-11 09:42:29,451 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:42:29,585 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-11 09:42:29,624 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderDetilDao.
+2018-10-11 09:42:29,625 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IOrderMasterDao.
+2018-10-11 09:42:29,626 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductCategoryDao.
+2018-10-11 09:42:29,626 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.IProductInfoDao.
+2018-10-11 09:42:29,627 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.heaven.dao.ISellerInfoDao.
+2018-10-11 09:42:29,854 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64ee396e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-11 09:42:30,551 - Tomcat initialized with port(s): 8080 (http)
+2018-10-11 09:42:30,564 - Starting service [Tomcat]
+2018-10-11 09:42:30,565 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-11 09:42:30,679 - Initializing Spring embedded WebApplicationContext
+2018-10-11 09:42:30,682 - Root WebApplicationContext: initialization completed in 2796 ms
+2018-10-11 09:42:30,722 - Servlet dispatcherServlet mapped to [/]
+2018-10-11 09:42:30,723 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 09:42:30,723 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 09:42:30,724 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 09:42:30,724 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 09:42:30,949 - HikariPool-9 - Starting...
+2018-10-11 09:42:40,053 - HikariPool-9 - Start completed.
+2018-10-11 09:42:40,103 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:42:40,104 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-11 09:42:40,183 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-11 09:42:40,403 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-11 09:42:41,284 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:42:41,479 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56044b42: startup date [Thu Oct 11 09:42:27 CST 2018]; root of context hierarchy
+2018-10-11 09:42:41,492 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-11 09:42:41,502 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.create(com.heaven.validator.OrderValidator,org.springframework.validation.BindingResult)
+2018-10-11 09:42:41,503 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-11 09:42:41,503 - Mapped "{[/buyer/order/cancel],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.cancel(java.lang.String,java.lang.String)
+2018-10-11 09:42:41,503 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerOrderMasterController.detail(java.lang.String,java.lang.String)
+2018-10-11 09:42:41,503 - Mapped "{[/buyer/product/list]}" onto public com.heaven.vo.ResultVo com.heaven.controller.BuyerProductController.list()
+2018-10-11 09:42:41,504 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.LoginController.login()
+2018-10-11 09:42:41,505 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,506 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,506 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerCategoryController.save(com.heaven.po.ProductCategory,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,507 - Mapped "{[/seller/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.login(com.heaven.validator.LoginValidator,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:42:41,508 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerInfoController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:42:41,510 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,511 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,511 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,511 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerOrderController.detial(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,515 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,515 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,516 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.save(com.heaven.dto.ProductInfoDTO,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,517 - Mapped "{[/seller/product/onSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.onSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,517 - Mapped "{[/seller/product/offSell],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.heaven.controller.SellerProductController.offSell(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-11 09:42:41,519 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+2018-10-11 09:42:41,520 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.heaven.controller.WechatController.authorize(java.lang.String) throws java.lang.Exception
+2018-10-11 09:42:41,523 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 09:42:41,523 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 09:42:41,554 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:42:41,554 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 09:42:41,572 - Detected @ExceptionHandler methods in sellerExceptionHandler
+2018-10-11 09:42:41,837 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-11 09:42:42,011 - LiveReload server is running on port 35729
+2018-10-11 09:42:42,040 - Registering beans for JMX exposure on startup
+2018-10-11 09:42:42,042 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-11 09:42:42,047 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-11 09:42:42,074 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-10-11 09:42:42,076 - Started SellApplication in 14.423 seconds (JVM running for 849.564)
+2018-10-11 09:42:42,082 - Condition evaluation unchanged

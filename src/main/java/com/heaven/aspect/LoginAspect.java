@@ -9,11 +9,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.heaven.exception.SellerException;
 import com.heaven.utils.CookieUtil;
@@ -42,7 +39,7 @@ public class LoginAspect {
 		} 
 		//获取redis中保存的token
 		try{
-			String token = redisTemplate.opsForValue().get(String.format(RedisUtils.TOKEN_PREFIX, cookie.getValue()));
+			redisTemplate.opsForValue().get(String.format(RedisUtils.TOKEN_PREFIX, cookie.getValue()));
 		}catch(SellerException e){
 		}
 	}
